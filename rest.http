@@ -1,0 +1,32 @@
+### root
+GET http://localhost:1198/api/v1/a2rp
+
+### create user
+POST http://localhost:1198/api/v1/create
+content-type: application/json
+
+{
+    "firstName": "first3",
+    "lastName": "last3",
+    "email": "firstlast3@mail.com"
+}
+
+### read all
+GET http://localhost:1198/api/v1/users
+
+### read one
+GET http://localhost:1198/api/v1/users/48bafd85-8747-4dd2-b574-60f8e17b4eb4
+
+### update
+PATCH http://localhost:1198/api/v1/users/48bafd85-8747-4dd2-b574-60f8e17b4eb4
+Content-Type: application/json
+
+{
+    "firstName": "updated first2",
+    "lastName": "updated last2",
+    "email": "updated@email.com"
+}
+
+### delete
+DELETE http://localhost:1198/api/v1/users/48bafd85-8747-4dd2-b574-60f8e17b4eb4
+
